@@ -1,8 +1,8 @@
 ---
-title       : Insert the chapter title here
+title       : Einfaches lineares Regressionsmodell
 description : Insert the chapter description here
 attachments :
-  slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
+slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:8d6675ca91
 ## A really bad movie
