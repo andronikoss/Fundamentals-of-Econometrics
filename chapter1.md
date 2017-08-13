@@ -163,5 +163,5 @@ test_function("plot", args = "y")
 
 test_error()
 
-success_msg("Fantastisch!")
+success_msg("Fantastisch! Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
 ```
