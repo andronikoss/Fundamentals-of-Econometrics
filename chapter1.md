@@ -6,8 +6,6 @@ slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_e
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:8d6675ca91
 ## Aufgabe 1
-Für die Familien Meier, Schmidt und Huber kennen wir das jeweilige Jahreseinkommen und
-die getätigten Spenden des Jahres 2014 (in Euro):
 
 *** =instructions
 - Adventure
@@ -111,4 +109,45 @@ test_function("plot", args = "col")
 test_error()
 
 success_msg("Good work!")
+```
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:2f1c6f32e6
+## Aufgabe 1
+Für die Familien Meier, Schmidt und Huber kennen wir das jeweilige Jahreseinkommen und
+die getätigten Spenden des Jahres 2014 (in Euro). 
+__________________________
+_________ Einkommen|Spenden
+Meier    | 28000   |   70 |
+Schmidt  | 84000   |  252 |
+Huber    | 42000   |   84 |
+
+
+
+*** =instructions
+- Check out the structure of `movie_selection`.
+- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
+- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
 ```
