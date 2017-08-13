@@ -113,7 +113,7 @@ success_msg("Good work!")
 
 
 
---- type:NormalExercise lang:r xp:1000 skills:5 key:2f1c6f32e6
+--- type:NormalExercise lang:r xp:50 skills:1 key:2f1c6f32e6
 ## Aufgabe 1
 Für die Familien Meier, Schmidt und Huber kennen wir das jeweilige Jahreseinkommen und
 die getätigten Spenden des Jahres 2014 (in Euro). Diese informationen sind im Datensatz  `salary` vorhanden.
@@ -165,3 +165,21 @@ test_error()
 
 success_msg("Fantastisch! Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
