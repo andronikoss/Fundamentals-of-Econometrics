@@ -5,9 +5,9 @@ attachments :
 slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:8d6675ca91
-## A really bad movie
-
-Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
+## Aufgabe 1
+Für die Familien Meier, Schmidt und Huber kennen wir das jeweilige Jahreseinkommen und
+die getätigten Spenden des Jahres 2014 (in Euro):
 
 *** =instructions
 - Adventure
