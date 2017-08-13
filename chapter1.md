@@ -116,38 +116,52 @@ success_msg("Good work!")
 --- type:NormalExercise lang:r xp:100 skills:1 key:2f1c6f32e6
 ## Aufgabe 1
 Für die Familien Meier, Schmidt und Huber kennen wir das jeweilige Jahreseinkommen und
-die getätigten Spenden des Jahres 2014 (in Euro). 
-__________________________
-_________ Einkommen|Spenden
-Meier    | 28000   |   70 |
-Schmidt  | 84000   |  252 |
-Huber    | 42000   |   84 |
-
+die getätigten Spenden des Jahres 2014 (in Euro). Diese informationen sind im Datensatz  `salary` vorhanden.
 
 
 *** =instructions
-- Check out the structure of `movie_selection`.
-- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
-- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
+- Verschaffen Sie einen ersten Überblick über den Datensatz `salary`.
+- Verwenden Sie den Befehl `plot()`, um eine Punktwolke zu erzeugen. Geben Sie dabei auf der horizontalen Achse die Werte von  `salary$Einkommen` und auf der vertikalen Achse `salary$Spenden` an.
 
 *** =hint
+Verwenden Sie den befehl `str` um den ersten Überblick über einen fremden Datensatz zu verschaffen. 
 
 *** =pre_exercise_code
 ```{r}
-
+x14 <- c(28000, 84000, 42000)
+y14 <- c(70, 252, 84)
+salary <- data.frame(Einkommen = x14, Spenden = y14) 
 ```
 
 *** =sample_code
 ```{r}
+# Verschaffe den ersten Überblick über den Datensatz salary:
+
+
+# Erzeuge die Punktwolke mit dem plot-Befehl:
+
 
 ```
 
 *** =solution
 ```{r}
+# Verschaffe den ersten Überblick über den Datensatz salary:
+str(salary)
 
+# Erzeuge die Punktwolke mit dem plot-Befehl:
+plot(salary$Einkommen, salary$Spenden)
 ```
 
 *** =sct
 ```{r}
+test_function("str", args = "object",
+              not_called_msg = "Verwende die Funktion `str()`!",
+              incorrect_msg = "Verwende `str(object = ...)` mit dem Korrekten Argument, `object`.")
 
+test_function("plot", args = "x")
+test_function("plot", args = "y")
+
+test_error()
+
+success_msg("Fantastisch!")
 ```
