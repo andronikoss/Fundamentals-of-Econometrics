@@ -203,12 +203,27 @@ Die Gäste eines Restaurants hinterlassen dem Kellner mehr oder weniger hohe Tri
 Da der Kellner zu allen Gästen gleichbleibend freundlich ist, kann er sich die Unterschiede
 in den Trinkgeldbeträgen nicht erklären. Er beauftragt deshalb einen befreundeten
 Ökonometriker, die Ursache für die *Betragsschwankungen* herauszufinden. Dieser vermutet,
-dass das Trinkgeld \\( yt \\) eines Gastes t durch den Rechnungsbetrag (xt) dieses Gastes bestimmt
+dass das Trinkgeld `y` eines Gastes durch den Rechnungsbetrag (`x`) dieses Gastes bestimmt
 wird. Nehmen wir an, dass wir im Laufe des Abends zwei Gäste mit den folgenden
-Daten beobachtet haben (jeweils in e):
+Daten beobachtet haben (jeweils in Euro):
+```
+Gast 1: `(x1, y1) = (10, 2)`
+Gast 2:  (x2, y2) = (30, 3)`
+```
 
 *** =instructions
-
+- Geben Sie zunächst den Befehl `rm(list=ls())` ein. Dieser Befehl ist lediglich eine
+Vorsichtsmaßnahme. Er löscht alle im Arbeitsspeicher von R eventuell noch von früheren
+Sitzungen enthaltenen Befehle und Objekte.
+- Erstellen Sie anschließend in R aus den gegebenen Daten ein Objekt mit dem Namen `kellner`, das zeilenweise zwischen
+Gästen und spaltenweise zwischen Rechnungsbetrag und Trinkgeld unterscheidet. Verwenden Sie hierfür entweder `rbind` oder `cbind`. Lassen Sie sich anschließend den Datensatz `kellner` anzeigen. 
+- Gehen Sie von einem proportionalen Zusammenhang aus `y = beta*x` und berechnen
+Sie in R separat für jede der beiden Beobachtungen das passende `beta1.dach` und `beta2.dach`. Bilden Sie
+anschließend den Durchschnitt aus den beiden Werten und geben Sie diesem Wert
+die Bezeichnung `beta.dach`.
+- Berechnen Sie in R für die Rechnungsbeträge `10` und `30` Euro das in einer Welt ohne
+Störeinflüsse zu erwartende Trinkgeld `y.dach`. Welche Störgrößenwerte sind gemäß unserer
+bisherigen Berechnungen bei den zwei beobachteten Gästen eingetreten? Berechnen Sie die geschätzten Sörungen und speichern Sie letztere unter `u.dach` ab.
 *** =hint
 
 *** =pre_exercise_code
@@ -218,15 +233,59 @@ Daten beobachtet haben (jeweils in e):
 
 *** =sample_code
 ```{r}
+# Entferne alle zuvor erzeugten Objekte aus dem R-Arbeitsspeicher:
+
+# Definiere den Datensatz kellner: 
+
+# Wiedergabe des Datensatzes:
+
+
+# Berechne beta1.dach und lass es anzeigen:
+
+
+# Berechne beta2.dach und lass es anzeigen:
+
+
+# Berechne den Durchschnitt aus beiden beta.dach werten:
+
+
+# Berechne die geschätzten Trinkgeldbeträge
+
+# Berechne die Residuen:
 
 ```
 
 *** =solution
 ```{r}
+# Entferne alle zuvor erzeugten Objekte aus dem R-Arbeitsspeicher:
+rm(list=ls())
+# Definiere den Datensatz kellner: 
+kellner <- rbind(c(10,2), c(30,3))
+# Wiedergabe des Datensatzes:
+kellner
 
+# Berechne beta1.dach und lass es anzeigen:
+beta1.dach <- 2/10
+beta1.dach
+# Berechne beta2.dach und lass es anzeigen:
+beta2.dach <- 3/30
+beta2.dach
+# Berechne den Durchschnitt aus beiden beta.dach werten:
+beta.dach <- mean(c(beta1.dach, beta2.dach))
+
+# Berechne die geschätzten Trinkgeldbeträge
+y.dach <- betadach*c(10,30)
+
+# Berechne die Residuen:
+u.dach <- c(2,3) - y.dach
 ```
 
 *** =sct
 ```{r}
-
+test_object("kellner")
+test_object("beta1.dach")
+test_object("beta2.dach")
+test_object("beta.dach")
+test_object("y.dach")
+test_object("u.dach")
 ```
