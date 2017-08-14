@@ -78,7 +78,7 @@ Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
 
 
 
---- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7806ca24d2
+--- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1 key:7806ca24d2
 ## Aufgabe 2
 
 Der in vorangegangen Aufgabenteil berechnete Durchschnittswert (`0.0025`) könnte als der Schätzwert des
@@ -109,3 +109,15 @@ msg3 <- "Falsch"
 msg4 <- "Falsch"
 test_mc(correct = 1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
+
+
+
+
+
+
+
+
+
+
+
+
