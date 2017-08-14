@@ -7,10 +7,12 @@ description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert
 Berechnen Sie mit den Erwartungswert der Zufallsvariable `u1 = Geworfene Augenzahl bei einmaligem Würfeln` und geben Sie dem Erwartungswert den Namen `E.u1`. Definieren Sie zu diesem Zweck im Quelltext-Fenster den Vektor `u1`, welcher die sechs möglichen Ausprägungen der Zufallsvariable `u1` enthält und nutzen Sie den Befehl `mean(u1)`, der das arithmetische Mittel des Vektors `u1` berechnet. Lassen Sie sich den Wert von `E.u1` anzeigen.
 
 *** =instructions
-- Erzeugen Sie einen Vektor `u1`, der alle möglichen Ausprägungen bei einmaligem Würfeln annehmen könnte.
-- Mithilfe des Befehls `mean` berechnen Sie den Erwartungswert der Zufallsvariable `u1`.
-- Führe ein Experiment durch, indem es zehnmal gewürfelt wird. Verwenden Sie hierfür den Befehl `sample` und setzen Sie dabei das Argument `replace=TRUE`. Um mehr über die Funktionalität des Befehls zu erfahren, geben Sie `help(sample)` oder `?sample` in der R-Konsole an. Anschließend speichern Sie die Ergebnisse der zehnmaligen Würfeln unter dem Objektsnamen `wuerfeln.1` ab. 
-- Berechnen Sie den Durchschnitt aus den geworfenen Werten.
+1. Erzeugen Sie einen Vektor `u1`, der alle möglichen Ausprägungen bei einmaligem Würfeln annehmen könnte.
+2. Mithilfe des Befehls `mean` berechnen Sie den Erwartungswert der Zufallsvariable `u1`.
+3. Führe ein Experiment durch, indem es zehnmal gewürfelt wird. Verwenden Sie hierfür den Befehl `sample` und setzen Sie dabei das Argument `replace=TRUE`. Um mehr über die Funktionalität des Befehls zu erfahren, geben Sie `help(sample)` oder `?sample` in der R-Konsole an. Anschließend speichern Sie die Ergebnisse der zehnmaligen Würfeln unter dem Objektsnamen `wuerfeln.1` ab. 
+4. Berechnen Sie den Durchschnitt aus den zehn geworfenen Werten.
+5. Erzeugen Sie eine Stichprobe mit 10000-maligem Würfeln. Speichern Sie die Werte unter dem Objektnamen `wuerfeln.2` ab. Anschließend berechnen Sie den Durchschnitt aus 10000 Ausprägungen.
+- 
 *** =hint
 
 *** =pre_exercise_code
