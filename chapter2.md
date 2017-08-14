@@ -14,11 +14,9 @@ Hallo
 
 *** =pre_exercise_code
 ```{r}
+library(bmp)
 a <- read.bmp("Bild1.bmp")
 m.a <- as.raster(a, max = 255)
-col.a <- unique(m.a)
-length(col.a)
-plot(1, type = "n", axes = FALSE, xlab = "", ylab = "")
 usr <- par("usr")
 rasterImage(m.a, usr[1], usr[3], usr[2], usr[4])
 ```
