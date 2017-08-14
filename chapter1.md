@@ -103,7 +103,7 @@ Die Beobachtungszahl ist für die korrekte Beantwortung dieser Aufgabe relevant!
 
 *** =sct
 ```{r}
-msg1 <- "Korrekt"
+msg1 <- "Korrekt! Unsere Schätzung beruht nur auf wenige Beobachtungen und kann nicht aussagekräftig sein!"
 msg2 <- "Falsch"
 msg3 <- "Falsch"
 msg4 <- "Falsch"
