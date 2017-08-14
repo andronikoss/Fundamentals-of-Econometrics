@@ -142,6 +142,11 @@ Sie erhalten für die drei Familien auch die Daten der Jahre 2012 und 2013 (in E
 
 *** =pre_exercise_code
 ```{r}
+
+```
+
+*** =sample_code
+```{r}
 # Einkommen- und Spendevektoren sind für Sie bereits erzeugt:
 x12 <- c(30000, 84000, 40000)
 y12 <- c(90, 252, 120)
@@ -154,30 +159,32 @@ y13 <- c(50, 252, 100)
 
 # Benennen Sie die Zeilen der Matrix salary.panel :
 
+# Wiedergabe der Matrix:
 
 ```
 
-*** =sample_code
+*** =solution
 ```{r}
-
+# Einkommen- und Spendevektoren sind für Sie bereits erzeugt:
 x12 <- c(30000, 84000, 40000)
 y12 <- c(90, 252, 120)
 x13 <- c(34000, 88000, 41000)
 y13 <- c(50, 252, 100)
 
-
+# Fassen Soe die Vektoren in eine Matrix mit dem Namen salary.panel zusammen:
 salary.panel <- cbind(x12, y12, x13, y13, x14 ,y14)
+# Benennen Sie die Spalten der Matrix salary.panel :
 colnames(salary.panel) <- c("x2012", "y2012", "x2013", "y2013", "x2014", "y2014")
+# Benennen Sie die Zeilen der Matrix salary.panel :
 rownames(salary.panel) <- c("Meier", "Schmidt", "Huber")
-spenden
-```
-
-*** =solution
-```{r}
-
+# Wiedergabe der Matrix:
+salary.panel
 ```
 
 *** =sct
 ```{r}
-
+test_object("salary.panel")
+test_function("colnames", "x")
+test_function("rownames", "x")
+success_msg("Bellissimo!")
 ```
