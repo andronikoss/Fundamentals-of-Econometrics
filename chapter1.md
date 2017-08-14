@@ -188,3 +188,45 @@ test_function("colnames", "x")
 test_function("rownames", "x")
 success_msg("Bellissimo!")
 ```
+
+
+
+
+
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:9f8402e32e
+## Trinkgeldbeispiel - Aufgabe 1
+Die Gäste eines Restaurants hinterlassen dem Kellner mehr oder weniger hohe Trinkgeldbeträge.
+Da der Kellner zu allen Gästen gleichbleibend freundlich ist, kann er sich die Unterschiede
+in den Trinkgeldbeträgen nicht erklären. Er beauftragt deshalb einen befreundeten
+Ökonometriker, die Ursache für die *Betragsschwankungen* herauszufinden. Dieser vermutet,
+dass das Trinkgeld \\( yt \\) eines Gastes t durch den Rechnungsbetrag (xt) dieses Gastes bestimmt
+wird. Nehmen wir an, dass wir im Laufe des Abends zwei Gäste mit den folgenden
+Daten beobachtet haben (jeweils in e):
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
