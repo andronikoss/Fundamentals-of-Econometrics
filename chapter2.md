@@ -2,7 +2,7 @@
 title       : Übungsblatt 2
 description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert und Varianz von Zufallsvariablen, Wiederholte Stichproben und Normalverteilung
 
---- type:PlainMultipleChoiceExercise lang:r xp:100 skills:1 key:fd64d35510
+--- type:NormalExercise lang:r xp:100 skills:1 key:fd64d35510
 ## Aufgabe 2.1
 
 Hallo
