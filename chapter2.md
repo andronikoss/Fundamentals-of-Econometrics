@@ -76,5 +76,12 @@ Var.u1 <- mean(abweichung^2)
 
 *** =sct
 ```{r}
+test_object("u1")
+test_object("E.u1 ")
+test_object("wuerfeln.1")
+test_function("mean", "x")
+test_object("wuerfeln.2")
+test_function("mean", "x")
 
+success_msg("Sehr gut. Weiter so!")
 ```
