@@ -206,9 +206,10 @@ in den Trinkgeldbeträgen nicht erklären. Er beauftragt deshalb einen befreunde
 dass das Trinkgeld `y` eines Gastes durch den Rechnungsbetrag (`x`) dieses Gastes bestimmt
 wird. Nehmen wir an, dass wir im Laufe des Abends zwei Gäste mit den folgenden
 Daten beobachtet haben (jeweils in Euro):
+
 ```
-Gast 1: `(x1, y1) = (10, 2)`
-Gast 2:  (x2, y2) = (30, 3)`
+Gast 1:  (x1, y1) = (10, 2)
+Gast 2:  (x2, y2) = (30, 3)
 ```
 
 *** =instructions
