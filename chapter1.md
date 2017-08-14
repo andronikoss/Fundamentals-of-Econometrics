@@ -1,11 +1,12 @@
 ---
-title       : Einfaches lineares Regressionsmodell
-description : Insert the chapter description here
+title       : Übungsblatt 1
+description : Grundlagen, Datensatztypen
 attachments :
-slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
+slides_link : https://www.dropbox.com/s/kabya657zvc4kga/U1.pdf
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:8d6675ca91
 ## Aufgabe 1
+
 
 *** =instructions
 - Adventure
