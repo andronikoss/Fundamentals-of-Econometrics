@@ -9,8 +9,8 @@ Berechnen Sie mit den Erwartungswert der Zufallsvariable `u1 = Geworfene Augenza
 *** =instructions
 - Erzeugen Sie einen Vektor `u1`, der alle möglichen Ausprägungen bei einmaligem Würfeln annehmen könnte.
 - Mithilfe des Befehls `mean` berechnen Sie den Erwartungswert der Zufallsvariable `u1`.
-- Führe ein Experiment durch, indem es zehnmal gewürfelt wird. Verwende hierfür den Befehl `sample` und setze dabei das Argument `replace=TRUE`. Um mehr über die Funktionalität des Befehls zu erfahren, gib `help(sample)` oder `?sample` in der R-Konsole an.
-- 
+- Führe ein Experiment durch, indem es zehnmal gewürfelt wird. Verwenden Sie hierfür den Befehl `sample` und setzen Sie dabei das Argument `replace=TRUE`. Um mehr über die Funktionalität des Befehls zu erfahren, geben Sie `help(sample)` oder `?sample` in der R-Konsole an. Anschließend speichern Sie die Ergebnisse der zehnmaligen Würfeln unter dem Objektsnamen `wuerfeln.1` ab. 
+- Berechnen Sie den Durchschnitt aus den geworfenen Werten.
 *** =hint
 
 *** =pre_exercise_code
