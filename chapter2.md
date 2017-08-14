@@ -12,7 +12,7 @@ description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert
 
 *** =pre_exercise_code
 ```{r}
-df <- read.csv2(("https://github.com/andronikoss/Fundamentals-of-Econometrics/blob/master/datasets/Konsum.csv"))
+df <- read.csv2(url("https://www.dropbox.com/s/ufcuzhfr5vfuaso/Duenger.csv"))
 ```
 
 *** =sample_code
