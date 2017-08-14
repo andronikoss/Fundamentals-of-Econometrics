@@ -5,8 +5,6 @@ description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert
 --- type:NormalExercise lang:r xp:100 skills:1 key:fd64d35510
 ## Aufgabe 2.1
 
-Hallo
-<img src="http://s3.amazonaws.com/assets.datacamp.com/course/Fundamentals-of-Econometrics/Bild1.jpg" alt="">
 
 *** =instructions
 
@@ -14,7 +12,7 @@ Hallo
 
 *** =pre_exercise_code
 ```{r}
-df <- read.csv2(("http://s3.amazonaws.com/assets.datacamp.com/course/Fundamentals-of-Econometrics/Konsum.csv"))
+df <- read.csv2(("https://github.com/andronikoss/Fundamentals-of-Econometrics/blob/master/datasets/Konsum.csv"))
 ```
 
 *** =sample_code
