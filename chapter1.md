@@ -288,4 +288,6 @@ test_object("beta2.dach")
 test_object("beta.dach")
 test_object("y.dach")
 test_object("u.dach")
+success_msg("Sehr gut!")
+
 ```
