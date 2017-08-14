@@ -25,7 +25,9 @@ Zweck ein neues dreielementiges R-Objekt `x14` mit den Jahreseinkommen der drei 
 und das entsprechende Objekt `y14` mit den jeweiligen Spenden. Speichern Sie die
 drei berechneten Anteile im Objekt `anteile` und lassen Sie sich das Objekt anzeigen.
 - Berechnen Sie, welcher Anteil des Jahreseinkommens im Durchschnitt der drei Familien
-gespendet wurde? Speichern Sie Ihren Schätzwert unter dem Objektnamen `betadach`.
+gespendet wurde? Speichern Sie Ihren Schätzwert unter dem Objektnamen `beta.dach`.
+- Welchen Spendenbetrag würden Sie auf Basis Ihres Schätzwertes `beta.dach` bei einer Familie
+mit einem Jahreseinkommen von 50000 Euro erwarten?
 *** =hint
 Verwenden Sie den befehl `str` um den ersten Überblick über einen fremden Datensatz zu verschaffen. 
 
@@ -59,6 +61,8 @@ y14 <- salary$y
 anteile <- y14/x14
 # Berechne welcher Anteil des Jahreseinkommens im Durchschnitt der drei Familien gespendet wurde?
 beta.dach <- mean(anteile)
+# Erwarteter Spendebetrag bei einer Familie mit 50000 Euro Einkommen:
+beta.dach * 50000
 ```
 
 *** =sct
@@ -70,6 +74,8 @@ test_object("x14")
 test_object("y14")
 test_object("anteile")
 test_object("beta.dach")
+test_output_contains("beta.dach * 50000", 
+incorrect_msg = "Ihre Berechnung war falsch. Tippen Sie `beta.dach * 50000` an!")
 test_error()
 
 success_msg("Fantastisch! Du hast deine ersten Punkte verdient.
