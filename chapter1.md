@@ -101,9 +101,9 @@ Die Beobachtungszahl ist für die korrekte Beantwortung dieser Aufgabe relevant!
 
 *** =sct
 ```{r}
-
-test_mc(correct = 1)
-
+msg1 <- "Korrekte Aussage"
+msg2 <- "Falsche Aussage"
+test_mc(correct = 1,feedback_msgs = c(msg1, msg2, msg2, msg2))
 ```
 
 
@@ -112,3 +112,31 @@ test_mc(correct = 1)
 
 
 
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:364824f52a
+## Aufgabe 3
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
