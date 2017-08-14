@@ -1,3 +1,3 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
+title       : Übungsblatt 3
+description : KQ-Schätzung einer Einfachregression, Summe der Residuenquadrate und Bestimmtheitsmaß, Importieren von externen Daten in R
