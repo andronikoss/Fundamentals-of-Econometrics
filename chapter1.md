@@ -94,13 +94,11 @@ für plausibel?
 - Der Verhaltensforscher hat eine falsche Hypothese aufgestellt.
 
 *** =hint
-You can find out the data type of the `a` variable for example by typing `class(a)`. You can do similar things for `b` and `c`.
+Die Beobachtungszahl ist für die korrekte Beantwortung dieser Aufgabe relevant!
 
 *** =pre_exercise_code
 ```{r}
-a <- 42
-b <- "forty-two"
-c <- FALSE
+
 ```
 
 *** =sct
