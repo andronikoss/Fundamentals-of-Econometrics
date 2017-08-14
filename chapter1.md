@@ -103,9 +103,7 @@ Die Beobachtungszahl ist für die korrekte Beantwortung dieser Aufgabe relevant!
 *** =sct
 ```{r}
 
-msg_bad = 'Ihre Auswahl ist leider nicht korrekt, versuchen Sie erneut!'
-msg_success = 'Ganz genau! Anhand nur wenigen Beobachtungen lässt sich keine fundamentale Aussage widerlegen.'
-test_mc(correct = 1, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+test_mc(correct = 1)
 
 ```
 
