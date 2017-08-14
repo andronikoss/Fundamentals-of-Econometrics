@@ -14,7 +14,7 @@ Hallo
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/course/Fundamentals-of-Econometrics/Konsum.csv"))
+df <- read.csv2(("http://s3.amazonaws.com/assets.datacamp.com/course/Fundamentals-of-Econometrics/Konsum.csv"))
 ```
 
 *** =sample_code
