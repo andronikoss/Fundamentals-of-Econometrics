@@ -105,9 +105,9 @@ c <- FALSE
 
 *** =sct
 ```{r}
-msg1 <- "`boolean` is not the class for logical values. Try again."
-msg2 <- "`a` is of the class `numeric`, give it another go."
-msg3 <- "`string` is not a class in R. `character` is!"
-msg4 <- "Nice one. Let's step it up a notch and start coercing variables!"
-test_mc(correct = 4, feedback_msgs = c(msg1, msg2, msg3, msg4))
+msg1 <- "Korrekt"
+msg2 <- "Falsch"
+msg3 <- "Falsch"
+msg4 <- "Falsch"
+test_mc(correct = 1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
