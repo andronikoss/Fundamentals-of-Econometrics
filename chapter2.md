@@ -13,7 +13,7 @@ Berechnen Sie mit den Erwartungswert der Zufallsvariable `u1 = Geworfene Augenza
 4. Berechnen Sie den Durchschnitt aus den zehn geworfenen Werten.
 5. Erzeugen Sie eine Stichprobe mit 10000-maligem Würfeln. Speichern Sie die Werte unter dem Objektnamen `wuerfeln.2` ab. Anschließend berechnen Sie den Durchschnitt aus 10000 Ausprägungen.
 6.  Berechne die Abweichungen der sechs möglichen Ausprägungen vom Erwartungswert und speichern Sie die Ergebnisse unter dem Namen `abweichung.u1` ab.
-7.  Berechnen Sie die Varianz der Zufallsvariable `u1`. Beachten Sie bitte, dass der Befehl `var` die Stichproben-Varianz und nicht die Varianz der Zufallsvariable berechnet.
+7.  Berechnen Sie die Varianz der Zufallsvariable `u1` und speichern Sie es unter dem Namen `Var.u1` ab. Beachten Sie bitte, dass der Befehl `var` die Stichproben-Varianz und nicht die Varianz der Zufallsvariable berechnet.
 *** =hint
 
 *** =pre_exercise_code
