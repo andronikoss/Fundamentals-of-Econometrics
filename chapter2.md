@@ -12,7 +12,8 @@ Berechnen Sie mit den Erwartungswert der Zufallsvariable `u1 = Geworfene Augenza
 3. Führe ein Experiment durch, indem es zehnmal gewürfelt wird. Verwenden Sie hierfür den Befehl `sample` und setzen Sie dabei das Argument `replace=TRUE`. Um mehr über die Funktionalität des Befehls zu erfahren, geben Sie `help(sample)` oder `?sample` in der R-Konsole an. Anschließend speichern Sie die Ergebnisse der zehnmaligen Würfeln unter dem Objektsnamen `wuerfeln.1` ab. 
 4. Berechnen Sie den Durchschnitt aus den zehn geworfenen Werten.
 5. Erzeugen Sie eine Stichprobe mit 10000-maligem Würfeln. Speichern Sie die Werte unter dem Objektnamen `wuerfeln.2` ab. Anschließend berechnen Sie den Durchschnitt aus 10000 Ausprägungen.
-- 
+6.  Berechne die Abweichungen der sechs möglichen Ausprägungen vom Erwartungswert und speichern Sie die Ergebnisse unter dem Namen `abweichung.u1` ab.
+7.  Berechnen Sie die Varianz der Zufallsvariable `u1`. Beachten Sie bitte, dass der Befehl `var` die Stichproben-Varianz und nicht die Varianz der Zufallsvariable berechnet.
 *** =hint
 
 *** =pre_exercise_code
@@ -22,27 +23,27 @@ Berechnen Sie mit den Erwartungswert der Zufallsvariable `u1 = Geworfene Augenza
 
 *** =sample_code
 ```{r}
-# Definiere die möglichen Ausprägungen der Zufallsvariable u1:
+# 1. Definiere die möglichen Ausprägungen der Zufallsvariable u1:
  
-# Berechne den Erwartungswert der Zufallsvariable u1:
+# 2. Berechne den Erwartungswert der Zufallsvariable u1:
    
 
-# Erzeuge eine Stichprobe für 10-maliges Würfeln-Experiment und speichere die Realisationen unter dem Namen wuerfeln.1:
+# 3. Erzeuge eine Stichprobe für 10-maliges Würfeln-Experiment und speichere die Realisationen unter dem Namen wuerfeln.1:
 
-# Berechnen den Durchschnitt aus den geworfenen Werten:
-
-
-# Erzeuge eine Stichprobe für 10000-maliges Würfeln und gib ihm den Namen wuerfeln.2:
+# 4. Berechnen den Durchschnitt aus den geworfenen Werten:
 
 
-# Berechnen den Durchschnitt aus den geworfenen Werten:
+# 5. Erzeuge eine Stichprobe für 10000-maliges Würfeln und gib ihm den Namen wuerfeln.2:
+
+
+# 5. Berechnen den Durchschnitt aus den geworfenen Werten:
 
 
 # Fazit: Mit Erhöhung des Stichprobenumfangs, nähert sich der Mittelwert dem Erwartungswert an.
 
-# Berechne die Abweichungen der sechs möglichen Ausprägungen vom Erwartungswert:
+# 6. Berechne die Abweichungen der sechs möglichen Ausprägungen vom Erwartungswert:
 
-# Berechne die Varianz der Zufallsvariable u1:
+# 7. Berechne die Varianz der Zufallsvariable u1:
 
 ```
 
