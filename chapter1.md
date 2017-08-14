@@ -20,7 +20,6 @@ besteht, wobei `y` die Spende und `x` das Jahreseinkommen der jeweiligen Familie
 
 *** =instructions
 - Verschaffen Sie einen ersten Überblick über den Datensatz `salary`.
-- Berechnen Sie die `beta` Proportionskoeffizienten für alle drei Familien.
 - Welchen Anteil ihres Jahreseinkommens haben die einzelnen Familien jeweils gespendet? Definieren Sie zu diesem
 Zweck ein neues dreielementiges R-Objekt `x14` mit den Jahreseinkommen der drei Familien
 und das entsprechende Objekt `y14` mit den jeweiligen Spenden. Speichern Sie die
@@ -41,9 +40,11 @@ salary <- data.frame(x, y)
 ```{r}
 # Verschaffe den ersten Überblick über den Datensatz salary:
 
+# Definiere x14 als Jahreseinkommen und y14 als Spenden: 
 
-# Erzeuge die Punktwolke mit dem plot-Befehl:
+# Berechne die Anteile des Jahreseinkommens, die gespendet wurden und speichere es unter dem Objekt anteile:
 
+# Berechne welcher Anteil des Jahreseinkommens im Durchschnitt der drei Familien gespendet wurde?
 
 ```
 
@@ -51,9 +52,13 @@ salary <- data.frame(x, y)
 ```{r}
 # Verschaffe den ersten Überblick über den Datensatz salary:
 str(salary)
-
-# Erzeuge die Punktwolke mit dem plot-Befehl:
-beta <- y/x
+# Definiere x14 als Jahreseinkommen und y14 als Spenden: 
+x14 <- salary$x14
+y14 <- salary$y14
+# Berechne die Anteile des Jahreseinkommens, die gespendet wurden und speichere es unter dem Objekt anteile:
+anteile <- y14/x14
+# Berechne welcher Anteil des Jahreseinkommens im Durchschnitt der drei Familien gespendet wurde?
+beta.dach <- mean(anteile)
 ```
 
 *** =sct
@@ -61,10 +66,10 @@ beta <- y/x
 test_function("str", args = "object",
               not_called_msg = "Verwende die Funktion `str()`!",
               incorrect_msg = "Verwende `str(object = ...)` mit dem Korrekten Argument, `object`.")
-
-test_function("plot", args = "x")
-test_function("plot", args = "y")
-
+test_object("x14")
+test_object("y14")
+test_object("anteile")
+test_object("beta.dach")
 test_error()
 
 success_msg("Fantastisch! Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
