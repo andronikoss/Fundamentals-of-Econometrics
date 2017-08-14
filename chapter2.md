@@ -69,9 +69,9 @@ mean(wuerfeln.2)
 # Fazit: Mit Erhöhung des Stichprobenumfangs, nähert sich der Mittelwert dem Erwartungswert an.
 
 # Berechne die Abweichungen der sechs möglichen Ausprägungen vom Erwartungswert:
-abweichung <- u1 - E.u1
+abweichung.u1 <- u1 - E.u1
 # Berechne die Varianz der Zufallsvariable u1:
-Var.u1 <- mean(abweichung^2)
+Var.u1 <- mean(abweichung.u1^2)
 ```
 
 *** =sct
@@ -79,9 +79,10 @@ Var.u1 <- mean(abweichung^2)
 test_object("u1")
 test_object("E.u1 ")
 test_object("wuerfeln.1")
-test_function("mean", "x")
+test_function("mean", args="x")
 test_object("wuerfeln.2")
-test_function("mean", "x")
-
+test_function("mean", args="x")
+test_object("abweichung.u1")
+test_object("Var.u1")
 success_msg("Sehr gut. Weiter so!")
 ```
