@@ -2,11 +2,11 @@
 title       : Übungsblatt 2
 description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert und Varianz von Zufallsvariablen, Wiederholte Stichproben und Normalverteilung
 
---- type:NormalExercise lang:r xp:100 skills:1 key:fd64d35510
+--- type:PlainMultipleChoiceExercise lang:r xp:100 skills:1 key:fd64d35510
 ## Aufgabe 2.1
 
 Hallo
-<img src="http://s3.amazonaws.com/assets.datacamp.com/course/Fundamentals-of-Econometrics/Bild1.jpg" alt="">
+
 
 *** =instructions
 
@@ -14,7 +14,13 @@ Hallo
 
 *** =pre_exercise_code
 ```{r}
-
+a <- read.bmp("Figure0a.bmp")
+m.a <- as.raster(a, max = 255)
+col.a <- unique(m.a)
+length(col.a)
+plot(1, type = "n", axes = FALSE, xlab = "", ylab = "")
+usr <- par("usr")
+rasterImage(m.a, usr[1], usr[3], usr[2], usr[4])
 ```
 
 *** =sample_code
