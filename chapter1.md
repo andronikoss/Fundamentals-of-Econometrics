@@ -79,37 +79,34 @@ Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
 
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:8d6675ca91
-## Aufgabe 
+## Aufgabe 2
 
+Der in vorangegangen Aufgabenteil berechnete Durchschnittswert (`0.0025`) könnte als der Schätzwert des
+unbekannten Parameters `beta` aufgefasst werden. Ein Verhaltensforscher vertritt die Hypothese,
+dass im Durchschnitt etwa `0.5` Prozent des Jahreseinkommens gespendet werden.
+Halten Sie diese Hypothese angesichts des von Ihnen berechneten Schätzwertes von `0.0025`
+für plausibel?
 
 *** =instructions
-- Adventure
-- Action
-- Animation
-- Comedy
+
+- Die obige Schätzung erfolgte auf Basis weniger Daten (drei Beobachtungen), sodass die Abweichung zu der Hypothese des Verhaltensforschers auch zufällig aufgetreten sein könnte.
+- Die Hypothese des Verhaltensforscher stimmt und kann nicht widerlegt werden, weil die eine Spendenneigung von 0.5% normal ist.
+- Die Schätzung folgt nicht nach einer Kleinstquadrat-Methode und deshalb ist wenig wahrhaft.
+- Der Verhaltensforscher hat eine falsche Hypothese aufgestellt.
 
 *** =hint
-Have a look at the plot. Which color does the point with the lowest rating have?
+Die Beobachtungszahl ist für die korrekte Beantwortung dieser Aufgabe relevant!
 
 *** =pre_exercise_code
-```{r}
-# The pre exercise code runs code to initialize the user's workspace.
-# You can use it to load packages, initialize datasets and draw a plot in the viewer
-
-movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
-
-library(ggplot2)
-
-ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
 ```
 
 *** =sct
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+msg_bad <- "Ihre Auswahl ist leider nicht korrekt, versuchen Sie erneut!"
+msg_success <- "Ganz genau! Anhand nur wenigen Beobachtungen lässt sich keine fundamentale Aussage widerlegen."
+test_mc(correct = 1, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 
