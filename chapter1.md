@@ -88,10 +88,10 @@ Halten Sie diese Hypothese angesichts des von Ihnen berechneten Schätzwertes vo
 für plausibel?
 
 *** =instructions
-- `a`'s class is `integer`, `b` is a `character`, `c` is a `boolean`.
-- `a`'s class is `character`, `b` is a `character` as well, `c` is a `logical`.
-- `a`'s class is `numeric`, `b` is a `string`, `c` is a `logical`.
-- `a`'s class is `numeric`, `b` is a `character`, `c` is a `logical`.
+- Die obige Schätzung erfolgte auf Basis weniger Daten (drei Beobachtungen), sodass die Abweichung zu der Hypothese des Verhaltensforschers auch zufällig aufgetreten sein könnte.
+- Die Hypothese des Verhaltensforscher stimmt und kann nicht widerlegt werden, weil die eine Spendenneigung von 0.5% normal ist.
+- Die Schätzung folgt nicht nach einer Kleinstquadrat-Methode und deshalb ist wenig wahrhaft.
+- Der Verhaltensforscher hat eine falsche Hypothese aufgestellt.
 
 *** =hint
 You can find out the data type of the `a` variable for example by typing `class(a)`. You can do similar things for `b` and `c`.
