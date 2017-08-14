@@ -136,17 +136,30 @@ Sie erhalten für die drei Familien auch die Daten der Jahre 2012 und 2013 (in E
 
 *** =instructions
 - Fassen Sie die vier Vektoren in eine Matrix mit dem Namen `salary.panel` zusammen. Verwenden Sie dafür den Befehl `cbind`.
-- Benennen Sie die Spalten von `salary.panel`  mit den folgenden Namen: `x2012`, `y2012` und `x2013`, `y2013`.
-- Benennen Sie die Zeilen von `salary.panel` mit den drei Familiennamen `Meier`, `Schmidt` und `Hubert`.
+- Benennen Sie die Spalten von `salary.panel`  mit den folgenden Namen: `x2012`, `y2012` und `x2013`, `y2013`. Verwenden Sie dabei den Befehl `colnames()`. 
+- Benennen Sie die Zeilen von `salary.panel` mit den drei Familiennamen `Meier`, `Schmidt` und `Hubert`. Verwenden Sie dabei den Befehl `rownames()`. 
 *** =hint
 
 *** =pre_exercise_code
 ```{r}
+# Einkommen- und Spendevektoren sind für Sie bereits erzeugt:
+x12 <- c(30000, 84000, 40000)
+y12 <- c(90, 252, 120)
+x13 <- c(34000, 88000, 41000)
+y13 <- c(50, 252, 100)
+
+# Fassen Soe die Vektoren in eine Matrix mit dem Namen salary.panel zusammen:
+
+# Benennen Sie die Spalten der Matrix salary.panel :
+
+# Benennen Sie die Zeilen der Matrix salary.panel :
+
 
 ```
 
 *** =sample_code
 ```{r}
+
 x12 <- c(30000, 84000, 40000)
 y12 <- c(90, 252, 120)
 x13 <- c(34000, 88000, 41000)
