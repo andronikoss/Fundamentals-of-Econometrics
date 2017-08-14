@@ -12,6 +12,7 @@ description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert
 
 *** =pre_exercise_code
 ```{r}
+library(bmp)
 load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_5057/datasets/data.RData"))
 a <- read.bmp("http://s3.amazonaws.com/assets.datacamp.com/production/course_5057/datasets/Bild1.bmp")
 m.a <- as.raster(a, max = 255)
