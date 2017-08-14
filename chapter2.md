@@ -12,7 +12,7 @@ description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert
 
 *** =pre_exercise_code
 ```{r}
-load(url("http://s3.amazonaws.com/assets.datacamp.com/course/intro_to_r/Bild1.jpg"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/course/Fundamentals-of-Econometrics/Bild1.jpg"))
 ```
 
 *** =sample_code
