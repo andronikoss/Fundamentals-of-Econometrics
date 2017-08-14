@@ -17,18 +17,24 @@ Wir gehen davon aus, dass zwischen dem Jahreseinkommen und den Spenden der propo
 `y = beta*x`
 besteht, wobei `y` die Spende und `x` das Jahreseinkommen der jeweiligen Familie darstellen.
 
+
 *** =instructions
 - Verschaffen Sie einen ersten Überblick über den Datensatz `salary`.
-- Verwenden Sie den Befehl `plot()`, um eine Punktwolke zu erzeugen. Geben Sie dabei auf der horizontalen Achse die Werte von  `salary$Einkommen` und auf der vertikalen Achse `salary$Spenden` an.
-
+- Berechnen Sie die `beta` Proportionskoeffizienten für alle drei Familien.
+- Welchen Anteil ihres Jahreseinkommens haben die einzelnen Familien jeweils gespendet? Definieren Sie zu diesem
+Zweck ein neues dreielementiges R-Objekt `x14` mit den Jahreseinkommen der drei Familien
+und das entsprechende Objekt `y14` mit den jeweiligen Spenden. Speichern Sie die
+drei berechneten Anteile im Objekt `anteile` und lassen Sie sich das Objekt anzeigen.
+- Berechnen Sie, welcher Anteil des Jahreseinkommens im Durchschnitt der drei Familien
+gespendet wurde? Speichern Sie Ihren Schätzwert unter dem Objektnamen `betadach`.
 *** =hint
 Verwenden Sie den befehl `str` um den ersten Überblick über einen fremden Datensatz zu verschaffen. 
 
 *** =pre_exercise_code
 ```{r}
-x14 <- c(28000, 84000, 42000)
-y14 <- c(70, 252, 84)
-salary <- data.frame(Einkommen = x14, Spenden = y14) 
+x <- c(28000, 84000, 42000)
+y <- c(70, 252, 84)
+salary <- data.frame(x, y) 
 ```
 
 *** =sample_code
@@ -47,7 +53,7 @@ salary <- data.frame(Einkommen = x14, Spenden = y14)
 str(salary)
 
 # Erzeuge die Punktwolke mit dem plot-Befehl:
-plot(salary$Einkommen, salary$Spenden)
+beta <- y/x
 ```
 
 *** =sct
