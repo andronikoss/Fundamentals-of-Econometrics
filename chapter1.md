@@ -53,8 +53,8 @@ salary <- data.frame(x, y)
 # Verschaffe den ersten Überblick über den Datensatz salary:
 str(salary)
 # Definiere x14 als Jahreseinkommen und y14 als Spenden: 
-x14 <- salary$x14
-y14 <- salary$y14
+x14 <- salary$x
+y14 <- salary$y
 # Berechne die Anteile des Jahreseinkommens, die gespendet wurden und speichere es unter dem Objekt anteile:
 anteile <- y14/x14
 # Berechne welcher Anteil des Jahreseinkommens im Durchschnitt der drei Familien gespendet wurde?
