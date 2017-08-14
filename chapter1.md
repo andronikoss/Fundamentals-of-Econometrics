@@ -129,3 +129,42 @@ test_mc(correct = 1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 
 
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:1b80bb2a7d
+## Aufgabe 3
+Sie erhalten für die drei Familien auch die Daten der Jahre 2012 und 2013 (in Euro). Die Informationen sind in Vektoren `x12`,`x13` für Einkommen und `y12`, `y13` für Spenden der jeweiligen Jahre abgespeichert.  
+
+*** =instructions
+- Fassen Sie die vier Vektoren in eine Matrix mit dem Namen `salary.panel` zusammen. Verwenden Sie dafür den Befehl `cbind`.
+- Benennen Sie die Spalten von `salary.panel`  mit den folgenden Namen: `x2012`, `y2012` und `x2013`, `y2013`.
+- Benennen Sie die Zeilen von `salary.panel` mit den drei Familiennamen `Meier`, `Schmidt` und `Hubert`.
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+x12 <- c(30000, 84000, 40000)
+y12 <- c(90, 252, 120)
+x13 <- c(34000, 88000, 41000)
+y13 <- c(50, 252, 100)
+
+
+salary.panel <- cbind(x12, y12, x13, y13, x14 ,y14)
+colnames(salary.panel) <- c("x2012", "y2012", "x2013", "y2013", "x2014", "y2014")
+rownames(salary.panel) <- c("Meier", "Schmidt", "Huber")
+spenden
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
