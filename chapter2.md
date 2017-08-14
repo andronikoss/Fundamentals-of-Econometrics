@@ -5,9 +5,8 @@ description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert
 --- type:NormalExercise lang:r xp:100 skills:1 key:fd64d35510
 ## Aufgabe 2.1
 
-<div id="bg">
-  <img src="http://s3.amazonaws.com/assets.datacamp.com/course/Fundamentals-of-Econometrics/Bild1.jpg" alt="">
-</div>  
+Hallo
+<img src="http://s3.amazonaws.com/assets.datacamp.com/course/Fundamentals-of-Econometrics/Bild1.jpg" alt="">
 
 *** =instructions
 
