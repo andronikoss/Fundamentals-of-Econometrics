@@ -153,7 +153,7 @@ y12 <- c(90, 252, 120)
 x13 <- c(34000, 88000, 41000)
 y13 <- c(50, 252, 100)
 
-# Fassen Soe die Vektoren in eine Matrix mit dem Namen salary.panel zusammen:
+# Fassen Sie die Vektoren in eine Matrix mit dem Namen salary.panel zusammen:
 
 # Benennen Sie die Spalten der Matrix salary.panel :
 
@@ -171,7 +171,7 @@ y12 <- c(90, 252, 120)
 x13 <- c(34000, 88000, 41000)
 y13 <- c(50, 252, 100)
 
-# Fassen Soe die Vektoren in eine Matrix mit dem Namen salary.panel zusammen:
+# Fassen Sie die Vektoren in eine Matrix mit dem Namen salary.panel zusammen:
 salary.panel <- cbind(x12, y12, x13, y13)
 # Benennen Sie die Spalten der Matrix salary.panel :
 colnames(salary.panel) <- c("x2012", "y2012", "x2013", "y2013")
