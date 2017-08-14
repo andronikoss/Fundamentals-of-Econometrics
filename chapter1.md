@@ -96,7 +96,9 @@ Die Beobachtungszahl ist für die korrekte Beantwortung dieser Aufgabe relevant!
 
 *** =pre_exercise_code
 # Auswählen
-
+a <- 42
+b <- "forty-two"
+c <- FALSE
 ```
 
 *** =sct
@@ -113,30 +115,38 @@ test_mc(correct = 1,feedback_msgs = c(msg1, msg2, msg2, msg2))
 
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:364824f52a
-## Aufgabe 3
+--- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7806ca24d2
+## What's that data type?
 
+When you added the variables containing `5` and `"six"`, you got an error due to a mismatch in data types. You can avoid such embarrassing situations by checking the data type of a variable beforehand:
+
+```
+class(my_var)
+```
+
+In the workspace (you can see what it contains by typing [`ls()`](http://www.rdocumentation.org/packages/base/functions/ls) in the console), some variables have already been defined. Which statement concerning these variables are correct?
 
 *** =instructions
+- `a`'s class is `integer`, `b` is a `character`, `c` is a `boolean`.
+- `a`'s class is `character`, `b` is a `character` as well, `c` is a `logical`.
+- `a`'s class is `numeric`, `b` is a `string`, `c` is a `logical`.
+- `a`'s class is `numeric`, `b` is a `character`, `c` is a `logical`.
 
 *** =hint
+You can find out the data type of the `a` variable for example by typing `class(a)`. You can do similar things for `b` and `c`.
 
 *** =pre_exercise_code
 ```{r}
-
-```
-
-*** =sample_code
-```{r}
-
-```
-
-*** =solution
-```{r}
-
+a <- 42
+b <- "forty-two"
+c <- FALSE
 ```
 
 *** =sct
 ```{r}
-
+msg1 <- "`boolean` is not the class for logical values. Try again."
+msg2 <- "`a` is of the class `numeric`, give it another go."
+msg3 <- "`string` is not a class in R. `character` is!"
+msg4 <- "Nice one. Let's step it up a notch and start coercing variables!"
+test_mc(correct = 4, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
