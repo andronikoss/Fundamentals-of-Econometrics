@@ -6,7 +6,7 @@ description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert
 ## Aufgabe 2.1
 
 Hallo
-
+<img src="http://s3.amazonaws.com/assets.datacamp.com/course/Fundamentals-of-Econometrics/Bild1.jpg" alt="">
 
 *** =instructions
 
@@ -14,11 +14,7 @@ Hallo
 
 *** =pre_exercise_code
 ```{r}
-library(bmp)
-a <- read.bmp("Bild1.bmp")
-m.a <- as.raster(a, max = 255)
-usr <- par("usr")
-rasterImage(m.a, usr[1], usr[3], usr[2], usr[4])
+load(url("http://s3.amazonaws.com/assets.datacamp.com/course/Fundamentals-of-Econometrics/Konsum.csv"))
 ```
 
 *** =sample_code
