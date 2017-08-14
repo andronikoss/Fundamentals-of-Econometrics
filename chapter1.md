@@ -48,6 +48,8 @@ salary <- data.frame(x, y)
 
 # Berechne welcher Anteil des Jahreseinkommens im Durchschnitt der drei Familien gespendet wurde?
 
+# Erwarteter Spendebetrag bei einer Familie mit 50000 Euro Einkommen:
+
 ```
 
 *** =solution
