@@ -81,11 +81,11 @@ Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7806ca24d2
 ## What's that data type?
 
-When you added the variables containing `5` and `"six"`, you got an error due to a mismatch in data types. You can avoid such embarrassing situations by checking the data type of a variable beforehand:
-
-```
-class(my_var)
-```
+Der in vorangegangen Aufgabenteil berechnete Durchschnittswert (`0.0025`) könnte als der Schätzwert des
+unbekannten Parameters `beta` aufgefasst werden. Ein Verhaltensforscher vertritt die Hypothese,
+dass im Durchschnitt etwa `0.5` Prozent des Jahreseinkommens gespendet werden.
+Halten Sie diese Hypothese angesichts des von Ihnen berechneten Schätzwertes von `0.0025`
+für plausibel?
 
 In the workspace (you can see what it contains by typing [`ls()`](http://www.rdocumentation.org/packages/base/functions/ls) in the console), some variables have already been defined. Which statement concerning these variables are correct?
 
