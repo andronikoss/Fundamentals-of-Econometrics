@@ -78,7 +78,8 @@ Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
 
 
 
---- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:8d6675ca91
+
+--- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:ec4c028f5b
 ## Aufgabe 2
 
 Der in vorangegangen Aufgabenteil berechnete Durchschnittswert (`0.0025`) könnte als der Schätzwert des
@@ -102,24 +103,7 @@ Die Beobachtungszahl ist für die korrekte Beantwortung dieser Aufgabe relevant!
 
 *** =sct
 ```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
 msg_bad <- "Ihre Auswahl ist leider nicht korrekt, versuchen Sie erneut!"
 msg_success <- "Ganz genau! Anhand nur wenigen Beobachtungen lässt sich keine fundamentale Aussage widerlegen."
 test_mc(correct = 1, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
