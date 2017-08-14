@@ -79,31 +79,3 @@ Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
 
 
 
---- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:ec4c028f5b
-## Aufgabe 2
-
-Der in vorangegangen Aufgabenteil berechnete Durchschnittswert (`0.0025`) könnte als der Schätzwert des
-unbekannten Parameters `beta` aufgefasst werden. Ein Verhaltensforscher vertritt die Hypothese,
-dass im Durchschnitt etwa `0.5` Prozent des Jahreseinkommens gespendet werden.
-Halten Sie diese Hypothese angesichts des von Ihnen berechneten Schätzwertes von `0.0025`
-für plausibel?
-
-*** =instructions
-
-- Die obige Schätzung erfolgte auf Basis weniger Daten (drei Beobachtungen), sodass die Abweichung zu der Hypothese des Verhaltensforschers auch zufällig aufgetreten sein könnte.
-- Die Hypothese des Verhaltensforscher stimmt und kann nicht widerlegt werden, weil die eine Spendenneigung von 0.5% normal ist.
-- Die Schätzung folgt nicht nach einer Kleinstquadrat-Methode und deshalb ist wenig wahrhaft.
-- Der Verhaltensforscher hat eine falsche Hypothese aufgestellt.
-
-*** =hint
-Die Beobachtungszahl ist für die korrekte Beantwortung dieser Aufgabe relevant!
-
-*** =pre_exercise_code
-```
-
-*** =sct
-```{r}
-msg_bad <- "Ihre Auswahl ist leider nicht korrekt, versuchen Sie erneut!"
-msg_success <- "Ganz genau! Anhand nur wenigen Beobachtungen lässt sich keine fundamentale Aussage widerlegen."
-test_mc(correct = 1, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
-```
