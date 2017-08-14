@@ -14,7 +14,7 @@ Für die Familien Meier, Schmidt und Huber kennen wir das jeweilige Jahreseinkom
 die getätigten Spenden des Jahres 2014 (in Euro). Diese informationen sind im Datensatz  `salary` vorhanden.
 
 Wir gehen davon aus, dass zwischen dem Jahreseinkommen und den Spenden der proportionale Zusammenhang
-$$y_{t}=\beta x_{t}$$ 
+$$y_{t}=\beta x_{t}$$  $$\sum_{i=1}^n X_i$$
 besteht, wobei $y_{t}$ die Spende und $$ x_{t} $$ das Jahreseinkommen der Familie
 $t$ darstellen.
 
