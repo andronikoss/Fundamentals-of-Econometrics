@@ -197,7 +197,7 @@ success_msg("Bellissimo!")
 
 
 
---- type:NormalExercise lang:r xp:100 skills:1 key:9f8402e32e
+--- type:NormalExercise lang:r xp:200 skills:1 key:9f8402e32e
 ## Trinkgeldbeispiel - Aufgabe 1
 Die Gäste eines Restaurants hinterlassen dem Kellner mehr oder weniger hohe Trinkgeldbeträge.
 Da der Kellner zu allen Gästen gleichbleibend freundlich ist, kann er sich die Unterschiede
