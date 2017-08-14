@@ -87,8 +87,6 @@ dass im Durchschnitt etwa `0.5` Prozent des Jahreseinkommens gespendet werden.
 Halten Sie diese Hypothese angesichts des von Ihnen berechneten Schätzwertes von `0.0025`
 für plausibel?
 
-In the workspace (you can see what it contains by typing [`ls()`](http://www.rdocumentation.org/packages/base/functions/ls) in the console), some variables have already been defined. Which statement concerning these variables are correct?
-
 *** =instructions
 - `a`'s class is `integer`, `b` is a `character`, `c` is a `boolean`.
 - `a`'s class is `character`, `b` is a `character` as well, `c` is a `logical`.
