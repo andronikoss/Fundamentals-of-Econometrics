@@ -274,7 +274,7 @@ beta2.dach
 beta.dach <- mean(c(beta1.dach, beta2.dach))
 
 # Berechne die geschätzten Trinkgeldbeträge
-y.dach <- betadach*c(10,30)
+y.dach <- beta.dach*c(10,30)
 
 # Berechne die Residuen:
 u.dach <- c(2,3) - y.dach
