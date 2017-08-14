@@ -131,7 +131,7 @@ test_mc(correct = 1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:1b80bb2a7d
-## Spenden - Aufgabe 1.3
+## Spendenbeispiel - Aufgabe 1.3
 Sie erhalten für die drei Familien auch die Daten der Jahre 2012 und 2013 (in Euro). Die Informationen sind in Vektoren `x12`,`x13` für Einkommen und `y12`, `y13` für Spenden der jeweiligen Jahre abgespeichert.  
 
 *** =instructions
