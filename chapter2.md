@@ -3,12 +3,14 @@ title       : Übungsblatt 2
 description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert und Varianz von Zufallsvariablen, Wiederholte Stichproben und Normalverteilung
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:3f15f6c27a
-## Würfelbeispiel - Aufgabe 1
-Berechnen Sie mit den Erwartungswert der Zufallsvariable `u1 = Geworfene Augenzahl bei einmaligem Würfeln` und geben Sie dem Erwartungswert den Namen `E.u1`. Definieren Sie zu diesem Zweck im Quelltext-Fenster den Vektor `u1`, welcher die sechs möglichen Ausprägungen der Zufallsvariable `u1` enthält und nutzen Sie den Befehl `mean(u1)`, der
-das arithmetische Mittel des Vektors `u1` berechnet. Lassen Sie sich den Wert von `E.u1` anzeigen.
+## Würfelbeispiel - Aufgabe 2.1
+Berechnen Sie mit den Erwartungswert der Zufallsvariable `u1 = Geworfene Augenzahl bei einmaligem Würfeln` und geben Sie dem Erwartungswert den Namen `E.u1`. Definieren Sie zu diesem Zweck im Quelltext-Fenster den Vektor `u1`, welcher die sechs möglichen Ausprägungen der Zufallsvariable `u1` enthält und nutzen Sie den Befehl `mean(u1)`, der das arithmetische Mittel des Vektors `u1` berechnet. Lassen Sie sich den Wert von `E.u1` anzeigen.
 
 *** =instructions
-
+- Erzeugen Sie einen Vektor `u1`, der alle möglichen Ausprägungen bei einmaligem Würfeln annehmen könnte.
+- Mithilfe des Befehls `mean` berechnen Sie den Erwartungswert der Zufallsvariable `u1`.
+- Führe ein Experiment durch, indem es zehnmal gewürfelt wird. Verwende hierfür den Befehl `sample` und setze dabei das Argument `replace=TRUE`. Um mehr über die Funktionalität des Befehls zu erfahren, gib `help(sample)` oder `?sample` in der R-Konsole an.
+- 
 *** =hint
 
 *** =pre_exercise_code
@@ -18,12 +20,55 @@ das arithmetische Mittel des Vektors `u1` berechnet. Lassen Sie sich den Wert vo
 
 *** =sample_code
 ```{r}
+# Definiere die möglichen Ausprägungen der Zufallsvariable u1:
+ 
+# Berechne den Erwartungswert der Zufallsvariable u1:
+   
+
+# Erzeuge eine Stichprobe für 10-maliges Würfeln-Experiment und speichere die Realisationen unter dem Namen wuerfeln.1:
+
+# Berechnen den Durchschnitt aus den geworfenen Werten:
+
+
+# Erzeuge eine Stichprobe für 10000-maliges Würfeln und gib ihm den Namen wuerfeln.2:
+
+
+# Berechnen den Durchschnitt aus den geworfenen Werten:
+
+
+# Fazit: Mit Erhöhung des Stichprobenumfangs, nähert sich der Mittelwert dem Erwartungswert an.
+
+# Berechne die Abweichungen der sechs möglichen Ausprägungen vom Erwartungswert:
+
+# Berechne die Varianz der Zufallsvariable u1:
 
 ```
 
 *** =solution
 ```{r}
+# Definiere die möglichen Ausprägungen der Zufallsvariable u1:
+u1 <- c(1,2,3,4,5,6)  
+# Berechne den Erwartungswert der Zufallsvariable u1:
+E.u1 <- mean(u1)      
 
+
+# Erzeuge eine Stichprobe für 10-maliges Würfeln-Experiment und speichere die Realisationen unter dem Namen wuerfeln.1:
+wuerfeln.1 <- sample(u1, size = 10, replace = TRUE)
+# Berechnen den Durchschnitt aus den geworfenen Werten:
+mean(wuerfeln.1)
+
+# Erzeuge eine Stichprobe für 10000-maliges Würfeln und gib ihm den Namen wuerfeln.2:
+wuerfeln.2 <- sample(u1, size = 10000, replace = TRUE)
+
+# Berechnen den Durchschnitt aus den geworfenen Werten:
+mean(wuerfeln.2)
+
+# Fazit: Mit Erhöhung des Stichprobenumfangs, nähert sich der Mittelwert dem Erwartungswert an.
+
+# Berechne die Abweichungen der sechs möglichen Ausprägungen vom Erwartungswert:
+abweichung <- u1 - E.u1
+# Berechne die Varianz der Zufallsvariable u1:
+Var.u1 <- mean(abweichung^2)
 ```
 
 *** =sct
