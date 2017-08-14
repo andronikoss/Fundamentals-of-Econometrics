@@ -95,17 +95,17 @@ für plausibel?
 Die Beobachtungszahl ist für die korrekte Beantwortung dieser Aufgabe relevant!
 
 *** =pre_exercise_code
+# Auswählen
+
 ```
 
-*** =sct
-```{r}
-```
 *** =sct
 ```{r}
 
 test_mc(correct = 1)
 
 ```
+
 
 
 
