@@ -14,7 +14,7 @@ Hallo
 
 *** =pre_exercise_code
 ```{r}
-a <- read.bmp("Figure0a.bmp")
+a <- read.bmp("Bild1.bmp")
 m.a <- as.raster(a, max = 255)
 col.a <- unique(m.a)
 length(col.a)
