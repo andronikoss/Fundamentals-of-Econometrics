@@ -72,7 +72,8 @@ test_object("anteile")
 test_object("beta.dach")
 test_error()
 
-success_msg("Fantastisch! Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
+success_msg("Fantastisch! Du hast deine ersten Punkte verdient.
+Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
 ```
 
 
