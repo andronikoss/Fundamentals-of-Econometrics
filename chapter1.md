@@ -79,7 +79,7 @@ Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
 
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7806ca24d2
-## What's that data type?
+## Aufgabe 2
 
 Der in vorangegangen Aufgabenteil berechnete Durchschnittswert (`0.0025`) könnte als der Schätzwert des
 unbekannten Parameters `beta` aufgefasst werden. Ein Verhaltensforscher vertritt die Hypothese,
