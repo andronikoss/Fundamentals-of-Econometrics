@@ -9,7 +9,7 @@ slides_link : https://www.dropbox.com/s/kabya657zvc4kga/U1.pdf
 
 
 --- type:NormalExercise lang:r xp:50 skills:1 key:2f1c6f32e6
-## Aufgabe 1
+## Spenden - Aufgabe 1
 Für die Familien Meier, Schmidt und Huber kennen wir das jeweilige Jahreseinkommen und
 die getätigten Spenden des Jahres 2014 (in Euro). Diese informationen sind im Datensatz  `salary` vorhanden.
 
@@ -87,7 +87,7 @@ Bleib dabei und lerne weiter mit unserem interaktiven Öko-Kurs!")
 
 
 --- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1 key:7806ca24d2
-## Aufgabe 2
+## Spenden - Aufgabe 2
 
 Der in vorangegangen Aufgabenteil berechnete Durchschnittswert (`0.0025`) könnte als der Schätzwert des
 unbekannten Parameters `beta` aufgefasst werden. Ein Verhaltensforscher vertritt die Hypothese,
@@ -131,7 +131,7 @@ test_mc(correct = 1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:1b80bb2a7d
-## Aufgabe 3
+## Spenden - Aufgabe 3
 Sie erhalten für die drei Familien auch die Daten der Jahre 2012 und 2013 (in Euro). Die Informationen sind in Vektoren `x12`,`x13` für Einkommen und `y12`, `y13` für Spenden der jeweiligen Jahre abgespeichert.  
 
 *** =instructions
