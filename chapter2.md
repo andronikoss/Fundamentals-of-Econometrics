@@ -5,7 +5,9 @@ description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert
 --- type:NormalExercise lang:r xp:100 skills:1 key:fd64d35510
 ## Aufgabe 2.1
 
-
+<div id="bg">
+  <img src="http://s3.amazonaws.com/assets.datacamp.com/production/course_5057/datasets/Bild1.bmp" alt="">
+</div>  
 *** =instructions
 
 *** =hint
@@ -14,11 +16,8 @@ description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert
 ```{r}
 library(bmp)
 load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_5057/datasets/data.RData"))
-a <- read.bmp("http://s3.amazonaws.com/assets.datacamp.com/production/course_5057/datasets/Bild1.bmp")
-m.a <- as.raster(a, max = 255)
-plot(1, type = "n", axes = FALSE, xlab = "", ylab = "")
-usr <- par("usr")
-rasterImage(m.a, usr[1], usr[3], usr[2], usr[4])
+
+
 ```
 
 *** =sample_code
