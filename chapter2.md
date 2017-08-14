@@ -5,19 +5,14 @@ description : Annahmen des einfachen linearen Regressionsmodells, Erwartungswert
 --- type:NormalExercise lang:r xp:100 skills:1 key:fd64d35510
 ## Aufgabe 2.1
 
-<div id="bg">
-  <img src="http://s3.amazonaws.com/assets.datacamp.com/production/course_5057/datasets/Bild1.bmp" alt="">
-</div>  
+
 *** =instructions
 
 *** =hint
 
 *** =pre_exercise_code
 ```{r}
-
 load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_5057/datasets/data.RData"))
-
-
 ```
 
 *** =sample_code
